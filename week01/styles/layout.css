@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: grid;
+    grid-template: auto 3fr 1fr / 3fr 1fr;
+    height: 100vh;
+}
+
+nav {
+    padding: 1rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-decoration: none;
+    background-color: black;
+    color: whitesmoke;
+}
+
+a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+header {
+    grid-column: 1/3;
+    color: whitesmoke;
+    background-color: darkslategray;
+}
+
+main {
+    padding: 2rem;
+    grid-column: 1/2;
+    background-color: lightgray;
+}
+
+aside {
+    padding: 2rem;
+    grid-column: 2/3;
+    background-color: whitesmoke;
+}
+
+footer {
+    padding: 2rem;
+    grid-column: 1/3;
+    color: whitesmoke;
+    background-color: darkslategray;
+}
+
+footer p {
+    justify-self: center;
+    align-self: flex-start;
+}
+
+header p {
+    margin: 1rem;
+}
