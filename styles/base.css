@@ -3,7 +3,7 @@
 */
     --primary-color: #2B2D42;
     --secondary-color: #1d5077;
-    --accent-color1: #F7EC59;
+    --accent-color1: #ffee05;
     --light-text-color: #F8F7F9;
     --dark-text-color: #332C3A;
 
@@ -108,6 +108,7 @@ img {
     margin: 1rem;
     border-radius: .5rem;
     border: solid 1px rgba(0, 0, 0, 0.3);
+    color: var(--dark-text-color);
 }
 
 .card-title {
@@ -149,6 +150,7 @@ img {
     margin: 20px 0 20px;
     font-size: x-large;
     justify-self: center;
+    color: var(--light-text-color);
 }
 
 #lastModified {
