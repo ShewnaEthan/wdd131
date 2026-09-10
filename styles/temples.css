@@ -68,6 +68,9 @@ main {
 
 img {
     max-width: 400px;
+}
+
+figure {
     padding: 1rem;
 }
 
