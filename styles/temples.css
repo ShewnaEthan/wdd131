@@ -1,0 +1,111 @@
+* {
+    /*Font*/
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+
+    /*Colors*/
+    --primary-color: #600477;
+    --secondary-color: #fcc47b;
+    --accent-color1: #097e3e;
+    --accent-color2: #9f9cf4;
+    --light-text-color: snow;
+    --dark-text-color: darkslategrey;
+
+    /*Margin and padding*/
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: auto;
+}
+
+header,
+footer {
+    background-color: var(--primary-color);
+    color: var(--light-text-color);
+    padding: 1.5rem;
+    font-size: large;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    margin-bottom: 1rem;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+}
+
+li {
+    display: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--light-text-color);
+    padding: 2px;
+    border-bottom: transparent 2px solid;
+}
+
+a:hover {
+    color: var(--secondary-color);
+    border-bottom: 2px solid var(--secondary-color);
+}
+
+main {
+    display: grid;
+    max-width: 600px;
+    margin: 0 auto;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    align-items: center;
+}
+
+img {
+    max-width: 400px;
+    padding: 1rem;
+}
+
+footer {
+    margin: 1rem auto 0;
+}
+
+footer p {
+    justify-self: center;
+}
+
+#lastModified {
+    color: var(--secondary-color);
+    place-items: center;
+}
+
+.show li {
+    display: block;
+}
+
+#menu {
+    background: none;
+    border: 0;
+    color: var(--light-text-color);
+    position: absolute;
+    top: 1.5rem;
+    right: 1rem;
+    font-size: larger;
+}
+
+#menu::before {
+    content: "☰";
+}
+
+#menu.show::before {
+    content: " X ";
+}
+
+#menu.show::before:hover {
+    content: "[X]";
+}
