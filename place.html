@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 Country Page</title>
+    <meta name="author" content="Ethan Bayer">
+    <meta name="description"
+        content="WDD 131 Country Page assignment. This page shows some information about a country and displays it dynamically based on the screen size">
+    <link rel="stylesheet" href="styles/place.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100..900&display=swap" rel="stylesheet">
+    <script defer src="scripts/getdates.js"></script>
+    <script defer src="scripts/windchill.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Illinois</h1>
+    </header>
+    <main>
+        <div class="hero">
+            <picture>
+                <source srcset="images/hero-image-large.webp" media="(min-width: 550px)">
+                <img src="images/hero-image-small.webp" alt="One of the City Skyline's in Illinois">
+            </picture>
+            <div class="hero-info">
+                <div class="info-card data">
+                    <h2>Data</h2>
+                    <div class="info-row">
+                        <p><strong>Area:</strong></p>
+                        <p>149,995 sq km</p>
+                    </div>
+                    <div class="info-row">
+                        <p><strong>Population:</strong></p>
+                        <p> 12,719,141</p>
+                    </div>
+                    <div class="info-row">
+                        <p><strong>Capital:</strong></p>
+                        <p>Springfield</p>
+                    </div>
+                    <div class="info-row">
+                        <p><strong>Largest City:</strong></p>
+                        <p>Chicago</p>
+                    </div>
+                    <div class="info-row">
+                        <p><strong>Time Zone:</strong></p>
+                        <p>UTC-5:00(CDT)</p>
+                    </div>
+                    <div class="info-row">
+                        <p><strong>Currency:</strong></p>
+                        <p>USD</p>
+                    </div>
+                    <div class="info-row">
+                        <p><strong>Calling Code(Capital):</strong></p>
+                        <p>+217, +447</p>
+                    </div>
+                </div>
+                <div class="info-card weather">
+                    <h2>Weather <img src="images/partly-cloudy.svg" alt="partly-cloudy"></h2>
+                    <div class="weather">
+                        <div class="info-row">
+                            <p><strong>Temperature:</strong></p>
+                            <p>83°F</p>
+                        </div>
+                        <div class="info-row">
+                            <p><strong>Conditions:</strong></p>
+                            <p>Partly Sunny</p>
+                        </div>
+                        <div class="info-row">
+                            <p><strong>Humidity:</strong></p>
+                            <p>64%</p>
+                        </div>
+                        <div class="info-row">
+                            <p><strong>Wind:</strong></p>
+                            <p>5 mph</p>
+                        </div>
+                        <div class="info-row">
+                            <p><strong>Wind Chill:</strong></p>
+                            <p><span id="windChill"></span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy;<span id="currentYear"> | Ethan Bayer | Illinois</span></p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>
