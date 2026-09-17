@@ -1,8 +1,10 @@
-:root {
+* {
     /*room*/
     padding: 0;
     margin: 0;
+}
 
+:root {
     /*Variables*/
     --main-color: #a70929;
     --secondary-color: #75583b;
