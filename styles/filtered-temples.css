@@ -1,0 +1,141 @@
+* {
+    /*Font*/
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+
+    /*Colors*/
+    --primary-color: #600477;
+    --secondary-color: #fcc47b;
+    --accent-color1: #005627;
+    --accent-color2: #e8e7f5;
+    --light-text-color: snow;
+    --dark-text-color: darkslategrey;
+
+    /*Margin and padding*/
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: auto;
+}
+
+header,
+footer {
+    background-color: var(--primary-color);
+    color: var(--light-text-color);
+    padding: 1.5rem;
+    font-size: large;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    margin-bottom: 1rem;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+}
+
+li {
+    display: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--light-text-color);
+    padding: 2px;
+    border-bottom: transparent 2px solid;
+}
+
+a:hover {
+    color: var(--secondary-color);
+    border-bottom: 2px solid var(--secondary-color);
+}
+
+main {
+    display: grid;
+    max-width: 600px;
+    margin: 0 auto;
+    justify-items: center;
+    align-items: center;
+}
+
+.card-holder {
+    display: grid;
+    margin: 0 auto;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    align-items: center;
+}
+
+img {
+    display: block;
+    max-width: 300px;
+    box-shadow: 0.3em 0.3em 1em black;
+    justify-self: center;
+    align-self: center;
+}
+
+footer {
+    margin: 1rem auto 0;
+}
+
+footer p {
+    justify-self: center;
+}
+
+#lastModified {
+    color: var(--secondary-color);
+    place-items: center;
+}
+
+.show li {
+    display: block;
+}
+
+.card {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    background: var(--accent-color2);
+    padding: .5rem;
+    margin: .5rem;
+    width: 300px;
+    min-height: 400px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 0.2rem;
+}
+
+.card p,
+.card h2 {
+    text-align: center;
+    /* padding: .2rem; */
+}
+
+.label {
+    color: var(--accent-color1);
+}
+
+#menu {
+    background: none;
+    border: 0;
+    color: var(--light-text-color);
+    position: absolute;
+    top: 1.5rem;
+    right: 1rem;
+    font-size: larger;
+    cursor: pointer;
+}
+
+#menu::before {
+    content: "☰";
+}
+
+#menu.show::before {
+    content: " X ";
+}
