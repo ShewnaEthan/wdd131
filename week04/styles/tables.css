@@ -1,0 +1,53 @@
+:root {
+    font-family: Arial, Helvetica, sans-serif;
+    --dark-background: #000;
+    --light-text: #fff;
+    --zebra: hsl(0, 0%, 93%, 1);
+    margin: 0;
+}
+
+table {
+    padding: 1rem;
+    border-collapse: collapse;
+    margin: 10px auto;
+}
+
+caption {
+    caption-side: bottom;
+    padding: 1rem;
+}
+
+thead {
+    background-color: var(--dark-background);
+    color: var(--light-text);
+    padding: 1rem;
+}
+
+thead tr:nth-last-child(1) {
+    background-color: #333;
+}
+
+th,
+td {
+    padding: .5rem;
+    margin: 0;
+    border-bottom: 1px solid rgb(0, 0, 0, 0.3);
+    border-left: 1px solid rgb(0, 0, 0, 0.3);
+}
+
+tr td:nth-last-child(1) {
+    border-right: 1px solid rgb(0, 0, 0, 0.3);
+    ;
+}
+
+td {
+    text-align: center;
+}
+
+tbody tr:nth-child(even) {
+    background-color: var(--zebra);
+}
+
+.blank {
+    background-color: var(--dark-background);
+}
