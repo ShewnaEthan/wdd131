@@ -23,6 +23,11 @@
     border-radius: .5rem;
 }
 
+h1 {
+    justify-self: center;
+}
+
+h1,
 h2 {
     border-bottom: var(--bord);
     max-width: fit-content;
