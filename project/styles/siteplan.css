@@ -1,0 +1,70 @@
+* {
+    /*Colors*/
+    --carbon-black: #252422;
+    --tangerine-dream: #F49D7B;
+    --charcoal-brown: #403D39;
+    --dust-grey: #CCC5B9;
+    --floral-white: #fcfaf2;
+
+    /*Font*/
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+
+    /* Basic Styling */
+    background-color: var(--floral-white);
+    --bord: 1px solid var(--charcoal-brown);
+}
+
+.color-scheme {
+    border: var(--bord);
+    padding: .25rem;
+    border-radius: .5rem;
+}
+
+h2 {
+    border-bottom: var(--bord);
+    max-width: fit-content;
+}
+
+li {
+    padding: 1.1rem;
+    max-width: fit-content;
+    border-radius: 1rem;
+}
+
+li::marker {
+    color: var(--carbon-black)
+}
+
+main {
+    margin: 0 auto;
+    color: var(--carbon-black);
+    background-color: var(--floral-white);
+    max-width: 1000px;
+}
+
+.carbon {
+    background-color: var(--carbon-black);
+    color: var(--floral-white);
+}
+
+.tangerine {
+    background-color: var(--tangerine-dream);
+    /* color: var(--floral-white); */
+}
+
+.charcoal {
+    background-color: var(--charcoal-brown);
+    color: var(--floral-white);
+}
+
+.dust {
+    background-color: var(--dust-grey);
+}
+
+.floral {
+    background-color: var(--floral-white);
+    color: var(--charcoal-brown);
+}
