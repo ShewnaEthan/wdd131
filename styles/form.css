@@ -87,3 +87,13 @@ body {
     background-color: rgba(0, 50, 0, 0.1);
     border-left: 3px solid green;
 }
+
+@media screen and (max-width: 600px) {
+    body {
+        font-size: 12px;
+    }
+
+    main {
+        margin: auto 1rem;
+    }
+}
