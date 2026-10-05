@@ -7,7 +7,7 @@
     <title>Product Review Form | WDD 131</title>
     <meta name="author" content="Ethan Bayer">
     <meta name="description"
-        content="Wdd131 week 5 assginment. This page uses javascript and and html to create a product review site that uses good form practices">
+        content="Wdd131 week 5 assginment. This page uses javascript and and html to create a product review site that uses good form practices.">
     <link rel="stylesheet" href="styles/form.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -22,7 +22,7 @@
     </header>
     <main>
         <form method="get" action="review.html" class="wf1">
-            <label>Product Name*<select id="products" name="products" required>
+            <label for="products">Product Name*<select id="products" name="products" required>
                     <option value="" disabled selected>Select a Product ...</option>
                 </select></label>
 
@@ -31,7 +31,7 @@
                     required>&star;&star;&star;&star;&star;</label>
             <label for="fourStars"><input type="radio" name="rating" value="fourStars" id="fourStars"
                     required>&star;&star;&star;&star;</label>
-            <label for=""><input type="radio" name="rating" value="threeStars" id="threeStars"
+            <label for="threeStars"><input type="radio" name="rating" value="threeStars" id="threeStars"
                     required>&star;&star;&star;</label>
             <label for="twoStars"><input type="radio" name="rating" value="twoStars" id="twoStars"
                     required>&star;&star;</label>
@@ -41,7 +41,7 @@
 
 
 
-            <label>Date of Installation*<input type="date" id="date" name="date" required></label>
+            <label for="date">Date of Installation*<input type="date" id="date" name="date" required></label>
 
             <div>Which features did you find useful in the product? &nbsp;(Check all that apply)</div>
             <label for="durability"><input type="checkbox" id="durability" name="durability"
@@ -52,7 +52,7 @@
                     value="preformance">Preformance</label>
             <label for="design"><input type="checkbox" id="design" name="design" value="design">Design</label>
 
-            <label for="review">Written Review<textarea id="written" name="written"></textarea></label>
+            <label for="written">Written Review<textarea id="written" name="written"></textarea></label>
             <label for="username">Your Name<input type="text" id="username" name="username"></label>
             <input type="submit" value="Send My Review">
         </form>
