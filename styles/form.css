@@ -1,0 +1,89 @@
+* {
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+}
+
+footer,
+header {
+    padding: .5rem;
+    text-align: center;
+}
+
+body {
+    font-size: 16px;
+}
+
+.wf1 {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.wf1 select,
+.wf1 input[type="date"],
+.wf1 input[type="text"],
+.wf1 textarea {
+    display: block;
+    border: 1px solid lightgray;
+    border-radius: 3px;
+    width: 100%;
+    max-width: 400px;
+    padding: .75rem;
+    background-color: #ddd;
+}
+
+.rating {
+    display: flex;
+}
+
+.wf1 label {
+    display: block;
+    padding-top: 1rem;
+    color: #15590c;
+}
+
+
+
+.wf1 input[type="radio"],
+.wf1 input[type="checkbox"] {
+    margin-right: 6px;
+    padding: .75rem;
+}
+
+.wf1 div {
+    padding-top: 1rem;
+    margin-bottom: -1rem;
+    color: #15590c;
+}
+
+/* .wf1 select,
+.wf1 input[type="radio"] {
+    background-color: rgba(255, 0, 0, 0.1);
+} */
+
+.wf1 input[type="submit"] {
+    margin: 1rem;
+    padding: .75rem;
+    max-width: 300px;
+    width: 100%;
+    box-shadow: 1px 1px 4px #999;
+    align-self: center;
+}
+
+.wf1 input:required,
+.wf1 select:required,
+.wf1 label:has(input[type="radio"]:required) {
+    background-color: rgba(255, 0, 0, 0.1);
+    border-left: 3px solid red;
+}
+
+.wf1 input:required:valid,
+.wf1 select:required:valid,
+.wf1 label:has(input[type="radio"]:required:valid) {
+    background-color: rgba(0, 50, 0, 0.1);
+    border-left: 3px solid green;
+}
