@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hobby Tracker | Home</title>
+    <meta name="author" content="Ethan Bayer">
+    <meta name="description"
+        content="Home page for my hobby tracker site. Contains links to different hobby tracking pages. Final project for my wdd131 class">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap">
+    <script defer src="scripts/index.js"></script>
+    <script defer src="scripts/getdates.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Hobby Tracker</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="reading.html">Reading</a>
+            <a href="speedrun.html">Speedrunning</a>
+            <a href="goal.html">Goal Maker</a>
+        </nav>
+    </header>
+    <main>
+        <div class="tagline">
+            <h2>Choose Your Hobby</h2>
+            <p>Select a hobby to view an aspect of it</p>
+        </div>
+        <div class="card-holder"></div>
+    </main>
+    <footer>
+        <p>&copy;<span id="currentYear"> | Ethan Bayer | Illinois</span></p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>
