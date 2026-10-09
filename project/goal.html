@@ -7,29 +7,47 @@
     <title>Hobby Tracker | Goal Maker</title>
     <meta name="author" content="Ethan Bayer">
     <meta name="description"
-        content="Home page for my hobby tracker site. Contains links to different hobby tracking pages. Final project for my wdd131 class">
+        content="Goal maker for the hobby site. Users will submit their goals to a form and the goals will be stored in local storage and displayed below the form">
     <link rel="stylesheet" href="styles/main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap">
     <script defer src="scripts/getdates.js"></script>
+    <script defer src="scripts/menu.js"></script>
+    <script defer src="scripts/goal.js"></script>
+
 </head>
 
 <body>
     <header>
         <h1>Hobby Tracker</h1>
+        <button id="menu" aria-label="Open / Collapse menu"></button>
         <nav>
-            <a href="index.html">Home</a>
-            <a href="reading.html">Reading</a>
-            <a href="speedrun.html">Speedrunning</a>
-            <a href="goal.html">Goal Maker</a>
+            <ul class="navigation">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="reading.html">Reading</a></li>
+                <li><a href="speedrun.html">Speedrunning</a></li>
+                <li><a href="goal.html">Goal Maker</a></li>
+            </ul>
         </nav>
     </header>
     <main>
         <div class="tagline">
             <h2>Goal Making Landing Page</h2>
-            <p>This page is under Construction</p>
+            <p>Please complete the form below to add a goal to your list.</p>
         </div>
+        <form class="goal">
+            <fieldset>
+                <legend>Goal Maker</legend>
+                <label for="name">Goal Name*<input type="text" id="name" required></label>
+                <label for="description">Goal Description*<textarea id="description" required></textarea></label>
+                <label for="hobby">Hobby<input type="text" id="hobby"></label>
+                <label for="plan">How do you plan to achieve your goal?*<textarea id="plan" required></textarea></label>
+                <label for="timeframe">When do you want to achieve your goal?*<input type="date" id="timeframe"
+                        required></label>
+                <input type="submit" value="Add My Goal" id="submit-goal" class="send-button">
+            </fieldset>
+        </form>
         <div class="card-holder"></div>
     </main>
     <footer>

@@ -6,21 +6,21 @@ let hobbyList = [
         description: "Track your to be read list with info such as authors name, number of words, and if its part of a series. Sort the books by different things such as number of pages, or genre.",
         icon: "",
         emoji: "📙",
-        site: "#"
+        site: "reading.html"
     },
     {
         hobby: "Speedrunning",
         description: "Track your speedrunning personal bests, your sum of best, the day you got it and your overall rating of the run. Filter by oldest, newest or closest to best segments.",
         icon: "",
         emoji: "⏱️",
-        site: "#"
+        site: "speedrun.html"
     },
     {
         hobby: "Goal Maker",
-        description: "Basic goal maker use this to make some goals with a description and time frame.",
+        description: "This is a basic goal maker you can use to make some goals with a description and time frame. You can track multiple goals and remove goals once you complete them",
         icon: "",
         emoji: "📋",
-        site: "#"
+        site: "goal.html"
     }
 ];
 
