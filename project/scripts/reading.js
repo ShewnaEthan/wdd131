@@ -100,8 +100,7 @@ function createCards(cardList) {
         bookWordCount.textContent = `Words: ${card.words}`;
         bookSeries.textContent = `Series: ${card.series}`;
 
-        newBookCard.classList.add("card")
-        newBookCard.classList.add("reading")
+        newBookCard.classList.add("readingCard")
         newBookCard.appendChild(bookName);
         newBookCard.appendChild(bookAuthor);
         newBookCard.appendChild(bookWordCount);

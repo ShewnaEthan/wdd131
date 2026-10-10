@@ -147,7 +147,7 @@ main {
     margin: .5rem .2rem;
 }
 
-.card h3 {
+h3 {
     text-align: center;
     padding: .75rem;
     background-color: var(--carbon-black);
@@ -156,13 +156,14 @@ main {
     height: 25px;
 }
 
-.card p {
+.card p,
+.readingCard p {
     padding: .75rem;
     text-align: justify;
     text-align-last: center;
 }
 
-.card img {
+img {
     display: block;
     width: 100px;
     align-self: center;
@@ -170,12 +171,19 @@ main {
     margin-top: .3rem;
 }
 
-.reading {
+.readingCard {
+    display: grid;
+    position: relative;
+    border: var(--bord);
+    border-radius: 8px;
+    height: auto;
+    justify-self: center;
+    margin: .5rem .2rem;
     width: 220px;
     font-size: .9rem;
 }
 
-.reading h3 {
+.readingCard h3 {
     padding-bottom: 2rem;
 }
 
