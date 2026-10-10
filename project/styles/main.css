@@ -157,9 +157,17 @@ main {
 }
 
 .card p {
-    padding: 1rem;
+    padding: .75rem;
     text-align: justify;
     text-align-last: center;
+}
+
+.card img {
+    display: block;
+    width: 100px;
+    align-self: center;
+    justify-self: center;
+    margin-top: .3rem;
 }
 
 .send-button {
@@ -183,7 +191,7 @@ main {
     display: none;
 }
 
-@media screen and (max-width: 670px) {
+@media screen and (max-width: 850px) {
     .card-holder {
         grid-template-columns: 1fr;
     }
@@ -196,6 +204,10 @@ main {
         margin: 1rem 0;
         height: auto;
     }
+}
+
+@media screen and (max-width: 670px) {
+
 
     ul {
         display: block;
