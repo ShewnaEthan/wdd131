@@ -53,12 +53,12 @@ li {
     display: inline;
 }
 
-nav a {
+a {
     color: var(--dust-grey);
     text-decoration: none;
 }
 
-nav a:hover {
+a:hover {
     color: var(--tangerine-dream);
     text-shadow: 1px 1px 5px var(--floral-white);
 }
