@@ -144,7 +144,7 @@ main {
     max-width: 300px;
     height: auto;
     justify-self: center;
-    margin: .2rem;
+    margin: .5rem .2rem;
 }
 
 .card h3 {
@@ -170,6 +170,16 @@ main {
     margin-top: .3rem;
 }
 
+.reading {
+    width: 220px;
+    font-size: .9rem;
+}
+
+.reading h3 {
+    padding-bottom: 2rem;
+}
+
+
 .send-button {
     justify-self: center;
     align-self: center;
@@ -191,7 +201,7 @@ main {
     display: none;
 }
 
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 750px) {
     .card-holder {
         grid-template-columns: 1fr;
     }
